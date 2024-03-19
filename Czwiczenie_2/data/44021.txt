@@ -1,0 +1,1 @@
+{"code":"44021","name":"Oleh","lastname":"Hrytsiv","gender":"male","age":"18","studyField":"inf"}
