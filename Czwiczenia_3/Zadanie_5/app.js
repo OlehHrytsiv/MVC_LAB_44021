@@ -5,6 +5,8 @@ const PORT = process.env.PORT || 3000;
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
+app.use(express.static(__dirname + '/public'));
+
 let students = [];
 
 app.get('/', (req, res) => {
