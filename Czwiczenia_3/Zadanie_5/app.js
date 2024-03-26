@@ -35,7 +35,7 @@ app.get('/students', (req, res) => {
   res.send(userList);
 });
 
-app.delete('/student/:id', (req, res) => { // zeby usunac studenta trzeba uzyc komendy "Invoke-WebRequest -Uri http://localhost:3003/student/0 -Method DELETE"
+app.delete('/student/:id', (req, res) => { // zeby usunac studenta trzeba uzyc komendy "Invoke-WebRequest -Uri http://localhost:3000/student/0 -Method DELETE"
   const studentId = req.params.id;
   if (studentId >= 0 && studentId < students.length) {
     students.splice(studentId, 1);
